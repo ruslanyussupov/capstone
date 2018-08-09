@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">Achievity</string>
+
+    <string name="title_home">Home</string>
+    <string name="title_discover">Discover</string>
+    <string name="title_profile">Profile</string>
+
+    <string name="refresh">Refresh</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="sign_out">Sign Out</string>
+
+    <string name="name">Name (Required)</string>
+    <string name="username">Username (Required)</string>
+    <string name="bio">Bio (Optional)</string>
+
+    <string name="add_goal_hint">Tell about your goal…</string>
+    <string name="send">Send</string>
+
+    <string name="username_is_taken">Sorry, this username is already taken.</string>
+    <string name="note_hint">Share your progress</string>
+
+    <string name="discard_changes">Discard changes?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <string name="pref_goals_liked">com.ruslaniusupov.achievity.GOALS_LIKED</string>
+    <string name="pref_posts_liked">com.ruslaniusupov.achievity.POSTS_LIKED</string>
+    <string name="pref_comments_liked">com.ruslaniusupov.achievity.COMMENTS_LIKED</string>
+    <string name="pref_subscriptions">com.ruslaniusupov.achievity.SUBSCRIPTIONS</string>
+
+    <string name="done">Done</string>
+    <string name="sort_by">Sort by</string>
+    <string name="recent">Recent</string>
+    <string name="popular">Popular</string>
+
+    <string name="def_count_value">0</string>
+    <string name="show_comments">Show Comments</string>
+    <string name="comment_hint">Write your comment…</string>
+
+    <string name="widget_title">Achievity: Notes</string>
+
+    <string name="state_no_network_connection">No network connection</string>
+    <string name="state_no_goals">No goals…</string>
+    <string name="state_no_notes">No notes…</string>
+    <string name="state_no_notifications">No notifications…</string>
+    <string name="state_no_comments">No comments…</string>
+    <string name="state_auth_failed">Authorization failed.</string>
+    <string name="content_desc_like_button">Like Button</string>
+    <string name="content_desc_notification_button">Notification Button</string>
+    <string name="content_desc_notes_count">Notes Count</string>
+    <string name="content_desc_comments_count">Comments Count</string>
+
+    <string name="error_name_cant_be_empty">Name can\'t be empty.</string>
+    <string name="error_goal_cant_be_empty">Goal can\'t be empty.</string>
+    <string name="error_comment_cant_be_empty">Comment can\'t be empty.</string>
+    <string name="error_note_cant_be_empty">Note can\'t be empty.</string>
+
+</resources>

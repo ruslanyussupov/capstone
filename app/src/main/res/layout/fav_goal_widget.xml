@@ -1,0 +1,42 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:padding="@dimen/widget_margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:background="@color/colorPrimary"
+            android:padding="@dimen/padding_widget_title"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:text="@string/widget_title"/>
+
+        <ListView
+            android:id="@+id/notes_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/notes_divider"
+            android:dividerHeight="@dimen/height_notes_divider"
+            tools:listitem="@layout/item_widget"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/emptyView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@android:color/secondary_text_light"
+        android:visibility="gone"
+        android:text="@string/state_no_notes"/>
+
+</FrameLayout>

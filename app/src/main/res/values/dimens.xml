@@ -1,0 +1,60 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+    <dimen name="widget_margin">8dp</dimen>
+    <dimen name="comment_et_margin">16dp</dimen>
+    <dimen name="goal_et_margin">16dp</dimen>
+    <dimen name="note_et_margin">16dp</dimen>
+    <dimen name="comments_rv_margin">12dp</dimen>
+    <dimen name="fab_elevation">6dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="name_et_margin_left">16dp</dimen>
+    <dimen name="name_et_margin_right">16dp</dimen>
+    <dimen name="name_et_margin_top">16dp</dimen>
+    <dimen name="bio_et_margin_left">16dp</dimen>
+    <dimen name="bio_et_margin_right">16dp</dimen>
+    <dimen name="bio_et_margin_top">16dp</dimen>
+    <dimen name="author_tv_margin">16dp</dimen>
+    <dimen name="publish_date_tv_margin">16dp</dimen>
+    <dimen name="note_tv_padding">16dp</dimen>
+    <dimen name="show_comments_btn_margin">16dp</dimen>
+    <dimen name="notes_rv_margin">12dp</dimen>
+    <dimen name="toolbar_elevation">4dp</dimen>
+    <dimen name="padding_widget_title">16dp</dimen>
+    <dimen name="height_notes_divider">1dp</dimen>
+    <dimen name="margin_goals_rv">12dp</dimen>
+    <dimen name="elevation_profile">4dp</dimen>
+    <dimen name="margin_left_name_tv">16dp</dimen>
+    <dimen name="margin_right_name_tv">16dp</dimen>
+    <dimen name="margin_top_name_tv">16dp</dimen>
+    <dimen name="margin_bio_tv">16dp</dimen>
+    <dimen name="margin_comment_item">4dp</dimen>
+    <dimen name="padding_comment_item">16dp</dimen>
+    <dimen name="margin_top_comment_body">8dp</dimen>
+    <dimen name="margin_top_comment_fav_btn">16dp</dimen>
+    <dimen name="margin_goal_item">4dp</dimen>
+    <dimen name="elevation_card">1dp</dimen>
+    <dimen name="corner_radius_card">4dp</dimen>
+    <dimen name="padding_goal_item">16dp</dimen>
+    <dimen name="margin_top_goal_body">8dp</dimen>
+    <dimen name="margin_top_goal_not_btn">16dp</dimen>
+    <dimen name="margin_top_notes_iv">16dp</dimen>
+    <dimen name="margin_right_notes_count_tv">16dp</dimen>
+    <dimen name="margin_top_goal_fav_btn">16dp</dimen>
+    <dimen name="margin_note_item">4dp</dimen>
+    <dimen name="padding_note_item">16dp</dimen>
+    <dimen name="margin_top_note_body_tv">8dp</dimen>
+    <dimen name="margin_top_note_fav_btn">16dp</dimen>
+    <dimen name="margin_top_coments_iv">16dp</dimen>
+    <dimen name="margin_right_comments_count">16dp</dimen>
+    <dimen name="margin_widget_item">4dp</dimen>
+    <dimen name="padding_widget_item">16dp</dimen>
+    <dimen name="margin_top_widget_body_tv">8dp</dimen>
+    <dimen name="margin_bottom_goals_container">76dp</dimen>
+    <dimen name="margin_profile_card">16dp</dimen>
+    <dimen name="margin_bottom_notes_rv">88dp</dimen>
+
+</resources>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".notes.NoteActivity">
+
+    <include
+        android:id="@+id/appbar"
+        layout="@layout/appbar" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/appbar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/show_comments_btn">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/author_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:layout_margin="@dimen/author_tv_margin"
+                tools:text="Ruslan Iusupov"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+            <TextView
+                android:id="@+id/publish_date_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:layout_margin="@dimen/publish_date_tv_margin"
+                tools:text="01 August 2018"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"/>
+
+            <TextView
+                android:id="@+id/note_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/note_tv_padding"
+                android:textColor="@android:color/black"
+                tools:text="Firebase started out as a cloud database which grew to include notifications, authentication, and other features. At face value, it looks interesting, allowing mobile devices to load and store data using the Firebase API, eliminating the need for owning any back-end server or hosting. To keep in sync easily, it’s possible for different devices using Firebase to get events on data changes. As its native format, the database uses JSON, a good fit for a web or mobile application. Firebase supports Web, Android, and iOS. This goes to mean it supports native apps plus a website or a web-based admin component. V3, the latest version of Firebase, is now completely hosted on Google Cloud and introduced us to some nice features like the Push notifications for iOS/Android and cloud storage."
+                app:layout_constraintTop_toBottomOf="@id/author_tv"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"/>
+
+        </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/show_comments_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/show_comments"
+        android:layout_margin="@dimen/show_comments_btn_margin"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>

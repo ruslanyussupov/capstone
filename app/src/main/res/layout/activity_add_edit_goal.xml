@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".addeditgoal.AddEditGoalActivity">
+
+    <include
+        layout="@layout/appbar" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/goal_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/goal_et_margin">
+
+        <EditText
+            android:id="@+id/goal_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/add_goal_hint"
+            android:maxLength="140"
+            android:inputType="textMultiLine|textFilter"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+
+
+</LinearLayout>

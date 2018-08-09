@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ruslaniusupov.achievity">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".auth.AuthActivity"/>
+
+        <activity
+            android:name=".profile.EditProfileActivity"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".addeditgoal.AddEditGoalActivity"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".notes.NotesActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".addeditnote.AddEditNoteActivity"
+            android:parentActivityName=".notes.NotesActivity" />
+
+        <activity
+            android:name=".notes.NoteActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName=".notes.NotesActivity" />
+
+        <activity
+            android:name=".addeditcomment.AddEditCommentActivity"
+            android:parentActivityName=".notes.NoteActivity" />
+
+        <activity
+            android:name=".comments.CommentsActivity"
+            android:parentActivityName=".notes.NoteActivity" />
+
+        <activity android:name=".widget.AppWidgetConfigureActivity">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".widget.AppWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/fav_goal_widget_info" />
+        </receiver>
+
+        <service
+            android:name=".widget.AppWidgetService"
+            android:exported="false"
+            android:permission="android.permission.BIND_REMOTEVIEWS"/>
+
+        <service
+            android:name=".sync.WidgetDataSyncService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.firebase.jobdispatcher.ACTION_EXECUTE"/>
+            </intent-filter>
+        </service>
+
+        <provider
+            android:authorities="com.ruslaniusupov.achievity"
+            android:name=".data.db.WidgetContentProvider"
+            android:exported="true"
+            tools:ignore="ExportedContentProvider" />
+
+    </application>
+
+</manifest>

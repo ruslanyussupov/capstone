@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_goal_item"
+    app:cardElevation="@dimen/elevation_card"
+    app:cardCornerRadius="@dimen/corner_radius_card">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_goal_item">
+
+        <TextView
+            android:id="@+id/author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            tools:text="Ruslan Iusupov"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/publish_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            tools:text="3 Jul 2018"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/body"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_goal_body"
+            android:textColor="@android:color/black"
+            tools:text="Goal description..."
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/author"/>
+
+        <ImageButton
+            android:id="@+id/notifications_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/notifications_selector"
+            android:layout_marginTop="@dimen/margin_top_goal_not_btn"
+            android:contentDescription="@string/content_desc_notification_button"
+            app:layout_constraintTop_toBottomOf="@id/body"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <TextView
+            android:id="@+id/subscribers_count_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            android:text="@string/def_count_value"
+            app:layout_constraintTop_toTopOf="@id/notifications_btn"
+            app:layout_constraintBottom_toBottomOf="@id/notifications_btn"
+            app:layout_constraintLeft_toRightOf="@id/notifications_btn"/>
+
+        <ImageView
+            android:id="@+id/notes_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_notes_iv"
+            android:contentDescription="@string/content_desc_notes_count"
+            app:srcCompat="@drawable/ic_notes"
+            app:layout_constraintRight_toLeftOf="@id/notes_count_tv"
+            app:layout_constraintTop_toBottomOf="@id/body"/>
+
+        <TextView
+            android:id="@+id/notes_count_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            android:text="@string/def_count_value"
+            android:layout_marginRight="@dimen/margin_right_notes_count_tv"
+            android:layout_marginEnd="@dimen/margin_right_notes_count_tv"
+            app:layout_constraintRight_toLeftOf="@id/fav_btn"
+            app:layout_constraintTop_toTopOf="@id/notes_iv"
+            app:layout_constraintBottom_toBottomOf="@id/notes_iv"/>
+
+        <ImageButton
+            android:id="@+id/fav_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/like_selector"
+            android:layout_marginTop="@dimen/margin_top_goal_fav_btn"
+            android:contentDescription="@string/content_desc_like_button"
+            app:layout_constraintRight_toLeftOf="@id/likes_count_tv"
+            app:layout_constraintTop_toBottomOf="@id/body"/>
+
+        <TextView
+            android:id="@+id/likes_count_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            android:text="@string/def_count_value"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/fav_btn"
+            app:layout_constraintBottom_toBottomOf="@id/fav_btn"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".profile.EditProfileActivity">
+
+    <include layout="@layout/appbar" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/name_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/name_et_margin_left"
+        android:layout_marginStart="@dimen/name_et_margin_left"
+        android:layout_marginRight="@dimen/name_et_margin_right"
+        android:layout_marginEnd="@dimen/name_et_margin_right"
+        android:layout_marginTop="@dimen/name_et_margin_top">
+
+        <EditText
+            android:id="@+id/name_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="64"
+            android:hint="@string/name"
+            android:inputType="textPersonName|textFilter" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/bio_et_margin_left"
+        android:layout_marginStart="@dimen/bio_et_margin_left"
+        android:layout_marginRight="@dimen/bio_et_margin_right"
+        android:layout_marginEnd="@dimen/bio_et_margin_right"
+        android:layout_marginTop="@dimen/bio_et_margin_top">
+
+        <EditText
+            android:id="@+id/bio_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="140"
+            android:hint="@string/bio"
+            android:inputType="textMultiLine|textFilter" />
+
+    </android.support.design.widget.TextInputLayout>
+
+</LinearLayout>

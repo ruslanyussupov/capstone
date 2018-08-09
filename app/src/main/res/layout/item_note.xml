@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_note_item"
+    app:cardElevation="@dimen/elevation_card"
+    app:cardCornerRadius="@dimen/corner_radius_card">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_note_item">
+
+        <TextView
+            android:id="@+id/author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            tools:text="Ruslan Iusupov"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/publish_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            tools:text="3 Jul 2018"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/body"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_note_body_tv"
+            android:textColor="@android:color/black"
+            android:maxLines="4"
+            android:ellipsize="end"
+            tools:text="Note about goal progression..."
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/author"/>
+
+        <ImageButton
+            android:id="@+id/fav_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/like_selector"
+            android:layout_marginTop="@dimen/margin_top_note_fav_btn"
+            android:contentDescription="@string/content_desc_like_button"
+            app:layout_constraintRight_toLeftOf="@id/likes_counter"
+            app:layout_constraintTop_toBottomOf="@id/body"/>
+
+        <TextView
+            android:id="@+id/likes_counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            android:text="@string/def_count_value"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/fav_btn"
+            app:layout_constraintBottom_toBottomOf="@id/fav_btn"/>
+
+        <ImageView
+            android:id="@+id/comments_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_comment"
+            android:layout_marginTop="@dimen/margin_top_coments_iv"
+            android:contentDescription="@string/content_desc_comments_count"
+            app:layout_constraintRight_toLeftOf="@id/comments_counter"
+            app:layout_constraintTop_toBottomOf="@id/body"/>
+
+        <TextView
+            android:id="@+id/comments_counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            android:layout_marginRight="@dimen/margin_right_comments_count"
+            android:layout_marginEnd="@dimen/margin_right_comments_count"
+            android:text="@string/def_count_value"
+            app:layout_constraintRight_toLeftOf="@id/fav_btn"
+            app:layout_constraintTop_toTopOf="@id/comments_iv"
+            app:layout_constraintBottom_toBottomOf="@id/comments_iv"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v7.widget.CardView>
