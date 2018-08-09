@@ -28,6 +28,7 @@ Achievity - mobile application intented for people who set goals and want to cha
 * Home - shows goals user subscribed on.
 * Discover - shows recent or most liked goals.
 * Profile - shows user info and his goals.
+* App Widget - shows notes of specific goal which user subscribed on.
 
 <img width="40%" src="https://raw.githubusercontent.com/ruslanyussupov/capstone/master/img/Screenshot_1533797415.png" /> <img width="40%" src="https://raw.githubusercontent.com/ruslanyussupov/capstone/master/img/Screenshot_1533797424.png" />
 <img width="40%" src="https://raw.githubusercontent.com/ruslanyussupov/capstone/master/img/Screenshot_1533797482.png" /> <img width="40%" src="https://raw.githubusercontent.com/ruslanyussupov/capstone/master/img/Screenshot_1533797497.png" />
